@@ -6,5 +6,7 @@
 
 struct SpriteComponent : public Component
 {
+    SpriteComponent() = default;
+    SpriteComponent(sf::Sprite s) : sprite(s) {}
     sf::Sprite sprite;
 };

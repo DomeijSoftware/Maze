@@ -1,8 +1,8 @@
-// main.pcc
-#include "Game.h"
+// main.cpp
+#include "core/Game.h"
 
 int main()
 {
-    Game g;
-    g.Run();
+    Game game;
+    game.init();
 }

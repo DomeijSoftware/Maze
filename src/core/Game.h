@@ -3,6 +3,7 @@
 
 #include "SFML/Graphics.hpp"
 
+#include <iostream>
 #include <vector>
 
 #include "GameObject.h"
@@ -13,6 +14,7 @@ public:
     Game();
     ~Game();
     void Run();
+    void Init();
 
 private:
     const sf::Vector2u GAMEWINDOWSIZE;

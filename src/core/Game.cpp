@@ -26,3 +26,17 @@ void Game::Run()
         gameWindow.display();
     }
 }
+
+void Game::Init()
+{
+    GameObject obj;
+    obj.AddComponent(std::make_unique<TransformComponent>());
+    obj.AddComponent(std::make_unique<SpriteComponent>());
+
+    if (auto tf = obj.GetComponent<TransformComponent>())
+    {
+        tf->x = 100;
+        tf->y = 200;
+        std::cout << "Position: " << tf->x << ", " << tf->y << std::endl;
+    }
+}
